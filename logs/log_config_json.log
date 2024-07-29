@@ -1,0 +1,5 @@
+{"funcName": "export_data_from_db", "asctime": "2024-07-15 12:18:50", "levelname": "INFO", "message": "Reading table from database 'dm_f101_round_f' in DataFrame"}
+{"funcName": "load_data_to_csv", "asctime": "2024-07-15 12:18:50", "levelname": "INFO", "message": "Writing a DataFrame to a csv-file 'dm_f101_round_f.csv'"}
+{"funcName": "read_csv_file", "asctime": "2024-07-15 12:18:50", "levelname": "INFO", "message": "Reading table from csv-file 'dm_f101_round_f.csv' in DataFrame"}
+{"funcName": "load_data_to_db", "asctime": "2024-07-15 12:18:50", "levelname": "INFO", "message": "TRUNCATE dm.dm_f101_round_f_v2"}
+{"funcName": "load_data_to_db", "asctime": "2024-07-15 12:18:50", "levelname": "INFO", "message": "Loading a DataFrame into a table 'dm_f101_round_f_v2' in the database"}

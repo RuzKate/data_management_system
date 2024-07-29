@@ -1,0 +1,35 @@
+version: 1
+formatters:
+  json:
+    format: '%(funcName)s %(asctime)s %(levelname)s %(message)s'
+    class: pythonjsonlogger.jsonlogger.JsonFormatter
+    datefmt: '%Y-%m-%d %H:%M:%S'
+  simple:
+    format: '%(funcName)s: %(asctime)s - [%(levelname)s] - %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+handlers:
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    filename: logs/log_config.log
+    formatter: simple
+    maxBytes: 110485760
+    backupCount: 3
+    encoding: utf8
+  file_json:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    filename: logs/log_config_json.log
+    formatter: json
+    maxBytes: 110485760
+    backupCount: 3
+    encoding: utf8
+  console:
+    class: logging.StreamHandler
+    level: ERROR
+    formatter: simple
+    stream: ext://sys.stdout
+loggers:
+  root:
+    level: INFO
+    handlers: [file, file_json, console]

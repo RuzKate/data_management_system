@@ -1,0 +1,5 @@
+export_data_from_db: 2024-07-15 12:18:50 - [INFO] - Reading table from database 'dm_f101_round_f' in DataFrame
+load_data_to_csv: 2024-07-15 12:18:50 - [INFO] - Writing a DataFrame to a csv-file 'dm_f101_round_f.csv'
+read_csv_file: 2024-07-15 12:18:50 - [INFO] - Reading table from csv-file 'dm_f101_round_f.csv' in DataFrame
+load_data_to_db: 2024-07-15 12:18:50 - [INFO] - TRUNCATE dm.dm_f101_round_f_v2
+load_data_to_db: 2024-07-15 12:18:50 - [INFO] - Loading a DataFrame into a table 'dm_f101_round_f_v2' in the database
